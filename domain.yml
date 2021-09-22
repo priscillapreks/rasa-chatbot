@@ -1,0 +1,54 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - query_knowledge_base
+  - bot_challenge
+
+entities:
+  - object_type
+  - mention
+  - attribute
+  - cafeteria
+  - bairro
+
+slots:
+  object_type:
+    type: text
+    influence_conversation: false
+  mention:
+    type: text
+    influence_conversation: false
+  attribute:
+    type: text
+    influence_conversation: false
+  cafeteria:
+    type: text
+    influence_conversation: false
+  bairro:
+    type: text
+    influence_conversation: false
+
+actions:
+- action_query_knowledge_base
+
+responses:
+  utter_greet:
+  - text: "Oi! Eu dou dicas de cafeterias em Curitiba! Como posso ajudar?"
+
+  utter_goodbye:
+  - text: "Até mais."
+  - text: "Tchau. Até a próxima."
+
+  utter_ask_rephrase:
+  - text: "Desculpe, não entendi. Pode reformular a pergunta?"
+  - text: "Poderia reformular a pergunta? Não entendi :("
+
+  utter_iamabot:
+  - text: "Eu sou um bot. :)"
+
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

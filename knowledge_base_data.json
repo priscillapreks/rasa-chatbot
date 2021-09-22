@@ -1,0 +1,60 @@
+{
+    "cafeteria": [
+        {
+            "id": 0,
+            "name": "Lucca Café",
+            "bairro": "Batel",
+            "endereco": "Alameda Presidente Taunay, 40",
+            "horario": "Segunda a Domingo, das 9h às 19h30.",
+            "descricao": "No Lucca Café você encontra muitos métodos de filtragem de café, com vários tipos grãos de variadas fazendas. No cardápio é possível selecionar o café de acordo com o gosto pessoal."
+        },
+        {
+            "id": 1,
+            "name": "Rause Café",
+            "bairro": "Centro",
+            "endereco": "Alameda Dr. Carlos de Carvalho, 696",
+            "horario": "Segunda a sábado, das 10h às 20h.",
+            "descricao": "A premiada cafeteria, que à noite se transforma em um delicioso wine bar, tem no seu DNA o acolhimento. Conta com várias comidas gostosas em todos os momentos do dia, do café da manhã ao almoço, passando pelo café da tarde, happy-hour e jantar."
+        },
+        {
+            "id": 2,
+            "name": "Botanique Café Bar Plantas",
+            "bairro": "Centro",
+            "endereco": "Rua Brigadeiro Franco, 1193",
+            "horario": "Segunda, das 14h às 23h; Terça e Quarta, das 14h às 21h; Quinta, das 14h às 22h; Sexta, das 11h às 22h; Sábado, das 11h às 23h; Domingo, das 9h30 às 21h.",
+            "descricao": "A casa serve um blend exclusivo da 4Beans e tem espresso, machiatto, capuccino, mocha, tchai e até um café especial com doce de leite, o Bonbon."
+        },
+        {
+            "id": 3,
+            "name": "Prestinaria",
+            "bairro": "Batel",
+            "endereco": "R. Euclides da Cunha, 699",
+            "horario": "Segunda a domingo, das 8h às 20h",
+            "descricao": "A combinação de pães e cafés é um clássico na Prestinaria. Serve uma torra especial da 4Beans Coffee Co., com notas de cacau, castanhas e chocolate."
+        },
+        {
+            "id": 4,
+            "name": "Bocca Lupo",
+            "bairro": "Centro",
+            "endereco": "R. Comendador Araújo, 431",
+            "horario": "Segunda a domingo, das 8h às 20h",
+            "descricao": "Com várias opções, inclusive para o almoço, a Bocca Lupo possui no seu cardápios comidas vegetarianas, cafés, dentre tantas outras variedades deliciosas."
+        },
+        {
+            "id": 5,
+            "name": "Café do Viajante",
+            "bairro": "Centro Cívico",
+            "endereco": "R. Comendador Fontana, 229",
+            "horario": "Segunda a domingo, das 8h às 20h",
+            "descricao": "O Café do Viajante nasceu da ideia de unir duas grandes paixões: as viagens e o café."
+        },
+        {
+            "id": 6,
+            "name": "Café Municipal",
+            "bairro": "Centro",
+            "endereco": "Rua General Carneiro, 1434",
+            "horario": "Segunda a Sábado, das 9 horas às 18:30.",
+            "descricao": "Cafés preparados em diferentes métodos de extração e uma decoração que vale conferir."
+        }
+    ]
+}

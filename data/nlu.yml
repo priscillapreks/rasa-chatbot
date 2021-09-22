@@ -1,0 +1,73 @@
+version: "2.0"
+
+nlu:
+  - intent: bot_challenge
+    examples: |
+      - você é um robô?
+      - você é humano?
+      - estou falando com um bot?
+      - estou falando com um humano?
+
+  - intent: greet
+    examples: |
+      - oi
+      - olá
+      - oi, tudo bem?
+      - bom dia
+      - boa tarde
+      - boa noite
+
+  - intent: goodbye
+    examples: |
+      - tchau
+      - até
+      - até mais
+      - até logo
+      - valeu
+      - obrigado
+
+  - intent: query_knowledge_base
+    examples: |
+      - me indique [cafeterias]{"entity": "object_type", "value": "cafeteria"}
+      - quais as melhores [cafeterias]{"entity": "object_type", "value": "cafeteria"} da cidade
+      - quero conhecer as [cafeterias]{"entity": "object_type", "value": "cafeteria"}
+      - quero dicas de [cafeteria]{"entity": "object_type", "value": "cafeteria"}
+      - gostaria de sugestões de [cafeteria]{"entity": "object_type", "value": "cafeteria"}
+      - poderia me sugerir uma [cafeteria]{"entity": "object_type", "value": "cafeteria"}?
+      - qual a melhor [cafeteria]{"entity": "object_type", "value": "cafeteria"} de Curitiba?
+      - qual [cafeteria]{"entity": "object_type", "value": "cafeteria"} você recomenda?
+      - qual [cafeteria]{"entity": "object_type", "value": "cafeteria"} você me indica?
+      - me fale algumas [cafeterias]{"entity": "object_type", "value": "cafeteria"} no [Centro]{"entity": "bairro"} por favor
+      - dicas de [cafeterias]{"entity": "object_type", "value": "cafeteria"} no [Batel]{"entity": "bairro"}
+      - quais [cafeterias]{"entity": "object_type", "value": "cafeteria"} você conhece na [batel]{"entity": "bairro"}?
+      - quero uma [cafeteria]{"entity": "object_type", "value": "cafeteria"} no bairro [Batel]{"entity": "bairro"}
+      - me [conte mais]{"entity": "attribute", "value": "descricao"} sobre [essa]{"entity": "mention"}?
+      - quero [saber mais]{"entity": "attribute", "value": "descricao"} sobre [ela]{"entity": "mention"}?
+      - quero [saber mais]{"entity": "attribute", "value": "descricao"} sobre o [Rause Café]{"entity": "cafeteria"}
+      - me [fale mais]{"entity": "attribute", "value": "descricao"} sobre [ela]{"entity": "mention"}?
+      - me [fale mais]{"entity": "attribute", "value": "descricao"} sobre a [Bocca Lupo]{"entity": "cafeteria"}?
+      - quero [saber mais]{"entity": "attribute", "value": "descricao"} sobre [Lucca Café]{"entity": "cafeteria"}
+      - qual é o [endereço]{"entity": "attribute", "value": "endereco"} da [Bocca Lupo]{"entity": "cafeteria"}?
+      - me passe o [endereço]{"entity": "attribute", "value": "endereco"} da [ultima]{"entity": "mention", "value": "LAST"}
+      - qual o [horario de funcionamento]{"entity": "attribute", "value": "horario"} da [Prestinaria]{"entity": "cafeteria"}
+      - tem alguma [cafeteria]{"entity": "object_type", "value": "cafeteria"} no [Centro Cívico]{"entity": "bairro"}?
+      - qual o [horario]{"entity": "attribute", "value": "horario"} da [ultima]{"entity": "mention", "value": "LAST"}?
+      - [que horas] funciona {"entity": "attribute", "value": "horario"} a [Lucca Café]{"entity": "cafeteria"}?
+      - a [segunda]{"entity": "mention", "value": "2"} fica aberta [que horas](horario)?
+      - eu queria [saber mais]{"entity": "attribute", "value": "descricao"} sobre a [segunda]{"entity": "mention", "value": "2"}?
+      - [onde fica]{"entity": "attribute", "value": "endereco"} da [primeira]{"entity": "mention", "value": "1"}?
+      - [onde é]{"entity": "attribute", "value": "endereco"} da [terceira]{"entity": "mention", "value": "3"}?
+      - quero conhecer no [Centro]{"entity": "bairro"} 
+      - liste as do [Batel]{"entity": "bairro"}
+      - estou no [Centro Cívico]{"entity": "bairro"}. Alguma dica?
+      - tem alguma no [Centro Cívico]{"entity": "bairro"}?
+  
+  - lookup: cafeteria
+    examples: |
+      - Lucca Café
+      - Rause Café
+      - Botanique Café Bar Plantas
+      - Prestinaria
+      - Bocca Lupo
+      - Café do Viajante
+      - Café Municipal
