@@ -9,8 +9,8 @@ If you want to chat with the bot, execute the following steps:
 2. Start the action server with `rasa run actions` in a separate terminal.
 3. Chat with the bot on the command line by executing `rasa shell`.
 
-If you want to see what slots are set and how confident the bot is in predicting the next action, you should run 
-the bot in debug mode: `rasa shell --debug`.
+If you want to see what slots are set and how confident the bot is in predicting the next action, you should run the bot in debug mode:    
+`rasa shell --debug`.
 
 Here are some example questions you can ask the bot:
 - “Quero dicas de cafeterias”
